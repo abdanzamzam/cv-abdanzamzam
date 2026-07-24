@@ -1,0 +1,180 @@
+# CV Data - Abdan Zam Zam Ramadhan
+# This file serves as the single source of truth for CV generation
+
+personal:
+  name: "Abdan Zam Zam Ramadhan"
+  title: "Senior Software Engineer"
+  location: "Jakarta Barat, Indonesia"
+  phone: "+62 812-7825-8174"
+  email: "hello@abdan.xyz"
+  website: "portfolio.abdan.xyz"
+  linkedin: "abdanzamzam"
+  github: "abdanzamzam"
+  photo: "" # optional path to photo
+
+summary: >
+  Senior Software Engineer with 5+ years of experience designing and building
+  scalable backend systems and full-stack applications. Specialized in Node.js,
+  Laravel, and microservices architecture. Built and integrated systems for
+  Indonesia's National Single Window (INSW) at the Ministry of Finance, handling
+  high-throughput inter-agency data exchange. Proven track record in leading
+  technical initiatives, mentoring developers, and delivering production-grade
+  solutions in government and enterprise environments.
+
+experience:
+  - company: "PT Astra Internasional"
+    role: "Senior Software Engineer"
+    period: "2022 - Present"
+    location: "Jakarta, Indonesia"
+    highlights:
+      - "Building and maintaining enterprise-grade backend services for INSW (National Single Window) 2nd generation at Ministry of Finance"
+      - "Designed microservices architecture handling inter-agency data exchange across multiple government institutions"
+      - "Integrated API services using Node.js, Express.js, PostgreSQL, Sequelize, and RabbitMQ message queuing"
+      - "Implemented Kong API Gateway for centralized authentication, rate limiting, and routing"
+      - "Optimized database queries and caching strategies improving response times by 40%"
+
+  - company: "ILCS (Indonesia Logistics Community Service)"
+    role: "Backend Developer"
+    period: "2021 - 2022"
+    location: "Jakarta, Indonesia"
+    highlights:
+      - "Developed RESTful API services and system integrations for logistics applications"
+      - "Built data pipelines using Node.js, Express, and RabbitMQ for real-time event processing"
+      - "Collaborated with cross-functional teams to design database schemas and API contracts"
+
+  - company: "Bigsource Project"
+    role: "Full Stack Developer (Co-founder)"
+    period: "2019 - 2021"
+    location: "Bandar Lampung, Indonesia"
+    highlights:
+      - "Co-founded a software house delivering custom applications for SME clients"
+      - "Built 15+ web and mobile applications using Laravel, WordPress, and Android (Java)"
+      - "Managed full project lifecycle from requirements gathering to deployment and maintenance"
+      - "Mentored junior developers and established coding standards and best practices"
+
+education:
+  - institution: "University of Lampung"
+    degree: "S1 Informatics Engineering"
+    period: "2014 - 2021"
+    notes: ""
+
+  - institution: "Hacktiv8"
+    degree: "Full Stack JavaScript Bootcamp"
+    period: "April - August 2021"
+    notes: "Intensive full-stack bootcamp covering Node.js, React, and modern web development"
+
+skills:
+  backend:
+    expert:
+      - "Node.js"
+      - "Express.js"
+      - "Laravel"
+      - "PostgreSQL"
+      - "Sequelize ORM"
+      - "REST API"
+      - "Microservices"
+    proficient:
+      - "MySQL"
+      - "MongoDB"
+      - "GraphQL"
+      - "RabbitMQ"
+      - "Kong API Gateway"
+      - "Redis"
+    familiar:
+      - "PHP"
+      - "Java"
+      - "C/C++"
+      - "TypeORM"
+      - "Socket.io"
+
+  frontend:
+    expert:
+      - "React.js"
+      - "TailwindCSS"
+      - "Bootstrap"
+    proficient:
+      - "Vue.js"
+      - "React Native"
+      - "jQuery"
+      - "HTML/CSS"
+      - "Apollo Client"
+    familiar:
+      - "Flutter"
+      - "Dart"
+      - "WordPress"
+      - "Redux"
+
+  devops:
+    - "Docker"
+    - "Linux Server"
+    - "CI/CD"
+    - "Cloudflare"
+    - "Git/GitHub"
+    - "Nginx"
+
+  languages:
+    - name: "Indonesian"
+      level: "Native"
+    - name: "English"
+      level: "Professional Working"
+
+projects:
+  - name: "INSW (National Single Window) 2nd Gen"
+    url: ""
+    description: >
+      Enterprise system for Indonesia's Ministry of Finance enabling
+      inter-agency data exchange for trade documentation. Built with
+      Node.js microservices, PostgreSQL, RabbitMQ, and Kong API Gateway.
+    role: "Backend Developer / System Integrator"
+
+  - name: "Kelola — Finance Management App"
+    url: "https://github.com/abdanzamzam/kelola"
+    description: >
+      Full-stack personal finance management application built with
+      NestJS 11, React 19, TanStack Router, and PostgreSQL 16.
+      Monorepo architecture using Turborepo.
+    tech: "NestJS, React, TypeScript, PostgreSQL, Prisma, Turborepo"
+
+  - name: "Queue Management System"
+    url: "https://github.com/abdanzamzam/queuing-system"
+    description: >
+      Real-time queue management platform for service businesses using
+      Laravel 13, Livewire 4, and Laravel Reverb for WebSocket support.
+    tech: "Laravel, Livewire, Reverb, TailwindCSS"
+
+  - name: "Betta Marketplace"
+    url: ""
+    description: >
+      Full-featured e-commerce marketplace for premium betta fish.
+      Includes auction system, real-time bidding, online payment
+      with Midtrans, and email notifications.
+    tech: "NestJS, Next.js, PostgreSQL, Midtrans, Socket.io"
+
+  - name: "AI Agent Platform (No-Code)"
+    url: ""
+    description: >
+      Educational platform teaching no-code AI agent creation,
+      automation workflows, and prompt engineering techniques.
+    tech: "React, Node.js, OpenAI API"
+
+achievements:
+  - "4K+ followers on LinkedIn with active content creation in tech community"
+  - "Speaker at Universitas Pendidikan Indonesia — Laravel Workshop (2021)"
+  - "Content Creator at Lampung Dev community (2022 - Present)"
+
+certifications:
+  - name: "Full Stack JavaScript"
+    issuer: "Hacktiv8"
+    year: 2021
+    url: ""
+
+volunteer:
+  - organization: "Lampung Dev"
+    role: "Content Creator"
+    period: "Feb 2022 - Present"
+    description: "Creating tech content and tutorials for the Lampung developer community"
+
+  - organization: "Universitas Pendidikan Indonesia"
+    role: "Workshop Speaker"
+    period: "November 2021"
+    description: "Conducted workshop 'Introduction to Laravel for Website Development' in collaboration with Bisasih Indonesia"

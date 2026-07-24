@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abdan Zam Zam Ramadhan - CV</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  /* ===== RESET & BASE ===== */
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  html { font-size: 10px; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 10.5px;
+    line-height: 1.5;
+    color: #1e293b;
+    background: #f1f5f9;
+    padding: 2rem;
+  }
+  .page {
+    max-width: 210mm;
+    min-height: 297mm;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ===== HEADER ===== */
+  .header {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+    color: #fff;
+    padding: 3.2rem 3.2rem 2.8rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .header::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 60%;
+    height: 200%;
+    background: radial-gradient(ellipse, rgba(56, 189, 248, 0.08) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .header-content { position: relative; display: flex; justify-content: space-between; align-items: flex-start; gap: 2rem; }
+  .header-left { flex: 1; }
+  .header-name { font-size: 3.2rem; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 0.4rem; }
+  .header-name span { color: #38bdf8; }
+  .header-title { font-size: 1.4rem; font-weight: 500; color: #94a3b8; margin-bottom: 0.2rem; }
+  .header-tagline { font-size: 1.1rem; color: #64748b; line-height: 1.6; margin-top: 0.8rem; max-width: 70%; }
+
+  .header-contact { display: flex; flex-wrap: wrap; gap: 0.6rem 1.6rem; margin-top: 1.4rem; }
+  .header-contact a {
+    color: #94a3b8; text-decoration: none; font-size: 1rem; display: flex; align-items: center; gap: 0.5rem;
+    transition: color 0.2s;
+  }
+  .header-contact a:hover { color: #38bdf8; }
+  .header-contact .icon { width: 1.3rem; height: 1.3rem; flex-shrink: 0; }
+  .header-contact .icon svg { width: 100%; height: 100%; fill: currentColor; }
+
+  /* ===== BODY LAYOUT ===== */
+  .body { display: flex; flex: 1; }
+  .sidebar {
+    width: 32%;
+    background: #f8fafc;
+    padding: 2.4rem 2rem;
+    border-right: 1px solid #e2e8f0;
+  }
+  .main {
+    width: 68%;
+    padding: 2.4rem 2.4rem;
+  }
+
+  /* ===== SECTION HEADINGS ===== */
+  .section { margin-bottom: 2rem; }
+  .section-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #0f172a;
+    margin-bottom: 1.2rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 2px solid #38bdf8;
+    display: inline-block;
+  }
+  .section-title-bar {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 1.2rem;
+  }
+  .section-title-bar .line {
+    flex: 1;
+    height: 1px;
+    background: #e2e8f0;
+  }
+  .sidebar .section-title { font-size: 1.05rem; }
+  .sidebar .section { margin-bottom: 1.8rem; }
+
+  /* ===== SKILLS ===== */
+  .skill-group { margin-bottom: 1.2rem; }
+  .skill-group:last-child { margin-bottom: 0; }
+  .skill-group-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #475569;
+    margin-bottom: 0.5rem;
+    text-transform: capitalize;
+  }
+  .skill-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+  .skill-tag {
+    display: inline-block;
+    padding: 0.25rem 0.7rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    background: #e2e8f0;
+    color: #334155;
+  }
+  .skill-tag.expert { background: #0f172a; color: #fff; }
+  .skill-tag.proficient { background: #cbd5e1; color: #1e293b; }
+  .skill-tag.familiar { background: #f1f5f9; color: #64748b; }
+
+  /* ===== EXPERIENCE ===== */
+  .exp-item { margin-bottom: 1.6rem; }
+  .exp-item:last-child { margin-bottom: 0; }
+  .exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.3rem;
+  }
+  .exp-role { font-size: 1.15rem; font-weight: 700; color: #0f172a; }
+  .exp-company { font-weight: 600; color: #2563eb; }
+  .exp-period { font-size: 0.95rem; color: #64748b; white-space: nowrap; }
+  .exp-location { font-size: 0.9rem; color: #94a3b8; margin-bottom: 0.5rem; }
+  .exp-highlights { list-style: none; padding: 0; }
+  .exp-highlights li {
+    position: relative;
+    padding-left: 1.2rem;
+    margin-bottom: 0.35rem;
+    font-size: 0.95rem;
+    color: #475569;
+    line-height: 1.55;
+  }
+  .exp-highlights li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.55em;
+    width: 0.45rem;
+    height: 0.45rem;
+    border-radius: 50%;
+    background: #2563eb;
+  }
+
+  /* ===== EDUCATION ===== */
+  .edu-item { margin-bottom: 1rem; }
+  .edu-item:last-child { margin-bottom: 0; }
+  .edu-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.2rem; }
+  .edu-degree { font-weight: 700; color: #0f172a; font-size: 1rem; }
+  .edu-school { color: #475569; font-size: 0.95rem; }
+  .edu-period { font-size: 0.9rem; color: #94a3b8; white-space: nowrap; }
+
+  /* ===== PROJECTS ===== */
+  .project-item { margin-bottom: 1.2rem; }
+  .project-item:last-child { margin-bottom: 0; }
+  .project-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.2rem; }
+  .project-name { font-weight: 700; font-size: 1rem; color: #0f172a; }
+  .project-name a { color: #2563eb; text-decoration: none; }
+  .project-name a:hover { text-decoration: underline; }
+  .project-role { font-size: 0.9rem; color: #64748b; }
+  .project-desc { font-size: 0.93rem; color: #475569; line-height: 1.5; margin-bottom: 0.2rem; }
+  .project-tech { display: flex; flex-wrap: wrap; gap: 0.3rem; margin-top: 0.3rem; }
+  .project-tech span {
+    padding: 0.15rem 0.5rem;
+    background: #e2e8f0;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    color: #475569;
+  }
+
+  /* ===== CONTACT SIDEBAR ===== */
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    margin-bottom: 0.6rem;
+    font-size: 0.95rem;
+    color: #475569;
+  }
+  .contact-item svg { width: 1.2rem; height: 1.2rem; fill: #64748b; flex-shrink: 0; }
+  .contact-item a { color: #2563eb; text-decoration: none; word-break: break-all; }
+  .contact-item a:hover { text-decoration: underline; }
+
+  /* ===== ACHIEVEMENTS ===== */
+  .achieve-item {
+    display: flex;
+    gap: 0.6rem;
+    margin-bottom: 0.6rem;
+    font-size: 0.93rem;
+    color: #475569;
+    line-height: 1.5;
+  }
+  .achieve-bullet {
+    width: 0.4rem;
+    height: 0.4rem;
+    border-radius: 50%;
+    background: #2563eb;
+    margin-top: 0.55em;
+    flex-shrink: 0;
+  }
+
+  /* ===== CERTIFICATION ===== */
+  .cert-item { margin-bottom: 0.6rem; }
+  .cert-name { font-size: 0.95rem; font-weight: 600; color: #0f172a; }
+  .cert-issuer { font-size: 0.9rem; color: #64748b; }
+  .cert-issuer span { color: #94a3b8; }
+
+  /* ===== VOLUNTEER ===== */
+  .vol-item { margin-bottom: 0.8rem; }
+  .vol-item:last-child { margin-bottom: 0; }
+  .vol-role { font-weight: 600; font-size: 0.95rem; color: #0f172a; }
+  .vol-org { font-size: 0.9rem; color: #64748b; }
+  .vol-period { font-size: 0.85rem; color: #94a3b8; }
+  .vol-desc { font-size: 0.9rem; color: #475569; margin-top: 0.2rem; line-height: 1.5; }
+
+  /* ===== SUMMARY IN SIDEBAR ===== */
+  .summary-text {
+    font-size: 0.92rem;
+    color: #475569;
+    line-height: 1.6;
+  }
+
+  /* ===== PRINT ===== */
+  @media print {
+    body { background: #fff; padding: 0; }
+    .page { box-shadow: none; border-radius: 0; max-width: 100%; }
+    .header { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .sidebar { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .skill-tag.expert { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .header-contact a { color: #94a3b8 !important; }
+    a { text-decoration: none !important; }
+  }
+
+  @media screen and (max-width: 768px) {
+    .body { flex-direction: column; }
+    .sidebar { width: 100%; border-right: none; border-bottom: 1px solid #e2e8f0; }
+    .main { width: 100%; }
+    .header-tagline { max-width: 100%; }
+    .header-content { flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+<div class="page" id="cv">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-content">
+      <div class="header-left">
+        <div class="header-name">Abdan <span>Zam Zam</span> R.</div>
+        <div class="header-title">Senior Software Engineer</div>
+        <div class="header-tagline">Building scalable backend systems & full-stack applications. 5+ years shipping production code in government & enterprise.</div>
+
+        <div class="header-contact">
+          <a href="tel:+6281278258174">
+            <span class="icon"><svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z"/></svg></span>
+            +62 812-7825-8174
+          </a>
+          <a href="mailto:hello@abdan.xyz">
+            <span class="icon"><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></span>
+            hello@abdan.xyz
+          </a>
+          <a href="https://portfolio.abdan.xyz" target="_blank">
+            <span class="icon"><svg viewBox="0 0 24 24"><path d="M16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38zm-1.56 4.58c.54-1.3.94-2.7 1.15-4.16h2.68a8.022 8.022 0 01-3.83 4.16zM12 20.6c-.8-1.06-1.5-2.24-2.06-3.52h4.12c-.56 1.28-1.26 2.46-2.06 3.52zm-4.79-6.6c-.08-.66-.14-1.32-.14-2 0-.68.06-1.34.14-2h7.58c.08.66.14 1.32.14 2 0 .68-.06 1.34-.14 2H7.21zm-.15-7.02c-.54 1.3-.94 2.7-1.15 4.16H3.23a8.022 8.022 0 013.83-4.16zM12 3.4c.8 1.06 1.5 2.24 2.06 3.52H9.94c.56-1.28 1.26-2.46 2.06-3.52zm5.73 1.58c-.71-.96-1.56-1.8-2.52-2.52 1.28.56 2.46 1.26 3.52 2.06l-1 .46zM6.27 4.98A8.022 8.022 0 0110.1 2.82 8.022 8.022 0 016.27 4.98zM3.23 10h2.68a15.86 15.86 0 00-1.15 4.16A8.022 8.022 0 013.23 10z"/></svg></span>
+            portfolio.abdan.xyz
+          </a>
+          <a href="https://linkedin.com/in/abdanzamzam" target="_blank">
+            <span class="icon"><svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></span>
+            abdanzamzam
+          </a>
+          <a href="https://github.com/abdanzamzam" target="_blank">
+            <span class="icon"><svg viewBox="0 0 24 24"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg></span>
+            abdanzamzam
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BODY -->
+  <div class="body">
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+
+      <!-- Summary -->
+      <div class="section">
+        <div class="section-title">About</div>
+        <div class="summary-text" id="summary-text"></div>
+      </div>
+
+      <!-- Skills -->
+      <div class="section">
+        <div class="section-title">Skills</div>
+        <div id="skills-container"></div>
+      </div>
+
+      <!-- Languages -->
+      <div class="section">
+        <div class="section-title">Languages</div>
+        <div id="languages-container"></div>
+      </div>
+
+      <!-- Certifications -->
+      <div class="section">
+        <div class="section-title">Certifications</div>
+        <div id="certifications-container"></div>
+      </div>
+
+      <!-- Volunteer -->
+      <div class="section">
+        <div class="section-title">Community</div>
+        <div id="volunteer-container"></div>
+      </div>
+
+    </div>
+
+    <!-- MAIN -->
+    <div class="main">
+
+      <!-- Experience -->
+      <div class="section">
+        <div class="section-title-bar">
+          <span class="section-title">Experience</span>
+          <span class="line"></span>
+        </div>
+        <div id="experience-container"></div>
+      </div>
+
+      <!-- Projects -->
+      <div class="section">
+        <div class="section-title-bar">
+          <span class="section-title">Key Projects</span>
+          <span class="line"></span>
+        </div>
+        <div id="projects-container"></div>
+      </div>
+
+      <!-- Education -->
+      <div class="section">
+        <div class="section-title-bar">
+          <span class="section-title">Education</span>
+          <span class="line"></span>
+        </div>
+        <div id="education-container"></div>
+      </div>
+
+      <!-- Achievements -->
+      <div class="section">
+        <div class="section-title-bar">
+          <span class="section-title">Achievements</span>
+          <span class="line"></span>
+        </div>
+        <div id="achievements-container"></div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script>
+// CV Data — single source of truth
+const cvData = {
+  personal: {
+    name: "Abdan Zam Zam Ramadhan",
+    title: "Senior Software Engineer",
+    location: "Jakarta Barat, Indonesia",
+    phone: "+62 812-7825-8174",
+    email: "hello@abdan.xyz",
+    website: "portfolio.abdan.xyz",
+    linkedin: "abdanzamzam",
+    github: "abdanzamzam"
+  },
+  summary: "Senior Software Engineer with 5+ years of experience designing and building scalable backend systems and full-stack applications. Specialized in Node.js, Laravel, and microservices architecture. Built and integrated systems for Indonesia's National Single Window (INSW) at the Ministry of Finance, handling high-throughput inter-agency data exchange. Proven track record in leading technical initiatives and delivering production-grade solutions in government and enterprise environments.",
+  experience: [
+    {
+      role: "Senior Software Engineer",
+      company: "PT Astra Internasional",
+      period: "2022 - Present",
+      location: "Jakarta, Indonesia",
+      highlights: [
+        "Building and maintaining enterprise-grade backend services for INSW (National Single Window) 2nd generation at Ministry of Finance",
+        "Designed microservices architecture handling inter-agency data exchange across multiple government institutions",
+        "Integrated API services using Node.js, Express.js, PostgreSQL, Sequelize, and RabbitMQ message queuing",
+        "Implemented Kong API Gateway for centralized authentication, rate limiting, and routing",
+        "Optimized database queries and caching strategies improving response times by 40%"
+      ]
+    },
+    {
+      role: "Backend Developer",
+      company: "ILCS (Indonesia Logistics Community Service)",
+      period: "2021 - 2022",
+      location: "Jakarta, Indonesia",
+      highlights: [
+        "Developed RESTful API services and system integrations for logistics applications",
+        "Built data pipelines using Node.js, Express, and RabbitMQ for real-time event processing",
+        "Collaborated with cross-functional teams to design database schemas and API contracts"
+      ]
+    },
+    {
+      role: "Full Stack Developer (Co-founder)",
+      company: "Bigsource Project",
+      period: "2019 - 2021",
+      location: "Bandar Lampung, Indonesia",
+      highlights: [
+        "Co-founded a software house delivering custom applications for SME clients",
+        "Built 15+ web and mobile applications using Laravel, WordPress, and Android (Java)",
+        "Managed full project lifecycle from requirements gathering to deployment and maintenance",
+        "Mentored junior developers and established coding standards and best practices"
+      ]
+    }
+  ],
+  education: [
+    { degree: "S1 Informatics Engineering", school: "University of Lampung", period: "2014 - 2021" },
+    { degree: "Full Stack JavaScript Bootcamp", school: "Hacktiv8", period: "Apr - Aug 2021" }
+  ],
+  skills: {
+    backend: {
+      expert: ["Node.js", "Express.js", "Laravel", "PostgreSQL", "Sequelize", "REST API", "Microservices"],
+      proficient: ["MySQL", "MongoDB", "GraphQL", "RabbitMQ", "Kong Gateway", "Redis"],
+      familiar: ["PHP", "Java", "C/C++", "TypeORM", "Socket.io"]
+    },
+    frontend: {
+      expert: ["React.js", "TailwindCSS", "Bootstrap"],
+      proficient: ["Vue.js", "React Native", "jQuery", "Apollo Client"],
+      familiar: ["Flutter", "Dart", "WordPress", "Redux"]
+    },
+    devops: ["Docker", "Linux", "CI/CD", "Cloudflare", "Git", "Nginx"]
+  },
+  languages: [
+    { name: "Indonesian", level: "Native" },
+    { name: "English", level: "Professional Working" }
+  ],
+  projects: [
+    {
+      name: "INSW (National Single Window) 2nd Gen",
+      url: "",
+      role: "Backend Developer / System Integrator",
+      description: "Enterprise system for Indonesia's Ministry of Finance enabling inter-agency data exchange for trade documentation. Built with Node.js microservices, PostgreSQL, RabbitMQ, and Kong API Gateway.",
+      tech: ["Node.js", "PostgreSQL", "RabbitMQ", "Kong"]
+    },
+    {
+      name: "Kelola — Finance Management App",
+      url: "https://github.com/abdanzamzam/kelola",
+      role: "Full Stack Developer",
+      description: "Full-stack personal finance management app. Monorepo with NestJS + React 19 + TanStack Router + PostgreSQL.",
+      tech: ["NestJS", "React", "TypeScript", "PostgreSQL"]
+    },
+    {
+      name: "Queue Management System",
+      url: "https://github.com/abdanzamzam/queuing-system",
+      role: "Full Stack Developer",
+      description: "Real-time queue management platform with Laravel 13, Livewire 4, and WebSocket support via Laravel Reverb.",
+      tech: ["Laravel", "Livewire", "Reverb", "TailwindCSS"]
+    },
+    {
+      name: "Betta Marketplace",
+      url: "",
+      role: "Full Stack Developer",
+      description: "Full-featured e-commerce marketplace with auction system, real-time bidding, online payment, and email notifications.",
+      tech: ["NestJS", "Next.js", "PostgreSQL", "Midtrans"]
+    }
+  ],
+  achievements: [
+    "4K+ followers on LinkedIn with active content creation in tech community",
+    "Speaker at Universitas Pendidikan Indonesia — Laravel Workshop (2021)",
+    "Content Creator at Lampung Dev community (2022 - Present)"
+  ],
+  certifications: [
+    { name: "Full Stack JavaScript", issuer: "Hacktiv8", year: 2021 }
+  ],
+  volunteer: [
+    {
+      role: "Content Creator",
+      org: "Lampung Dev",
+      period: "Feb 2022 - Present",
+      description: "Creating tech content and tutorials for the Lampung developer community"
+    },
+    {
+      role: "Workshop Speaker",
+      org: "Universitas Pendidikan Indonesia",
+      period: "Nov 2021",
+      description: "Conducted workshop 'Introduction to Laravel for Website Development'"
+    }
+  ]
+};
+
+function render() {
+  // Summary
+  document.getElementById('summary-text').textContent = cvData.summary;
+
+  // Skills
+  const skillsContainer = document.getElementById('skills-container');
+  const skillGroups = ['Backend', 'Frontend', 'DevOps'];
+  const skillKeys = ['backend', 'frontend', 'devops'];
+  skillKeys.forEach((key, idx) => {
+    const skills = cvData.skills[key];
+    if (!skills) return;
+    const group = document.createElement('div');
+    group.className = 'skill-group';
+    const title = document.createElement('div');
+    title.className = 'skill-group-title';
+    title.textContent = skillGroups[idx];
+    group.appendChild(title);
+
+    if (Array.isArray(skills)) {
+      const tags = document.createElement('div');
+      tags.className = 'skill-tags';
+      skills.forEach(s => {
+        const tag = document.createElement('span');
+        tag.className = 'skill-tag expert';
+        tag.textContent = s;
+        tags.appendChild(tag);
+      });
+      group.appendChild(tags);
+    } else {
+      ['expert', 'proficient', 'familiar'].forEach(level => {
+        if (!skills[level] || !skills[level].length) return;
+        const tags = document.createElement('div');
+        tags.className = 'skill-tags';
+        tags.style.marginBottom = '0.4rem';
+        skills[level].forEach(s => {
+          const tag = document.createElement('span');
+          tag.className = `skill-tag ${level}`;
+          tag.textContent = s;
+          tags.appendChild(tag);
+        });
+        group.appendChild(tags);
+      });
+    }
+    skillsContainer.appendChild(group);
+  });
+
+  // Languages
+  const langsContainer = document.getElementById('languages-container');
+  cvData.languages.forEach(l => {
+    const div = document.createElement('div');
+    div.style.cssText = 'display:flex;justify-content:space-between;margin-bottom:0.4rem;font-size:0.9rem;';
+    div.innerHTML = `<span style="color:#475569;">${l.name}</span><span style="color:#94a3b8;">${l.level}</span>`;
+    langsContainer.appendChild(div);
+  });
+
+  // Certifications
+  const certContainer = document.getElementById('certifications-container');
+  cvData.certifications.forEach(c => {
+    const item = document.createElement('div');
+    item.className = 'cert-item';
+    item.innerHTML = `
+      <div class="cert-name">${c.name}</div>
+      <div class="cert-issuer">${c.issuer} <span>• ${c.year}</span></div>
+    `;
+    certContainer.appendChild(item);
+  });
+
+  // Volunteer
+  const volContainer = document.getElementById('volunteer-container');
+  cvData.volunteer.forEach(v => {
+    const item = document.createElement('div');
+    item.className = 'vol-item';
+    item.innerHTML = `
+      <div class="vol-role">${v.role}</div>
+      <div class="vol-org">${v.org} <span class="vol-period">• ${v.period}</span></div>
+      ${v.description ? `<div class="vol-desc">${v.description}</div>` : ''}
+    `;
+    volContainer.appendChild(item);
+  });
+
+  // Experience
+  const expContainer = document.getElementById('experience-container');
+  cvData.experience.forEach(e => {
+    const item = document.createElement('div');
+    item.className = 'exp-item';
+    let highlightsHtml = '';
+    e.highlights.forEach(h => {
+      highlightsHtml += `<li>${h}</li>`;
+    });
+    item.innerHTML = `
+      <div class="exp-header">
+        <div><span class="exp-role">${e.role}</span> — <span class="exp-company">${e.company}</span></div>
+        <span class="exp-period">${e.period}</span>
+      </div>
+      <div class="exp-location">${e.location}</div>
+      <ul class="exp-highlights">${highlightsHtml}</ul>
+    `;
+    expContainer.appendChild(item);
+  });
+
+  // Projects
+  const projectsContainer = document.getElementById('projects-container');
+  cvData.projects.forEach(p => {
+    const item = document.createElement('div');
+    item.className = 'project-item';
+    const techHtml = p.tech ? p.tech.map(t => `<span>${t}</span>`).join('') : '';
+    const urlHtml = p.url ? `<a href="${p.url}" target="_blank">🔗</a>` : '';
+    item.innerHTML = `
+      <div class="project-header">
+        <div class="project-name">${p.name} ${urlHtml}</div>
+        <span class="project-role">${p.role}</span>
+      </div>
+      <div class="project-desc">${p.description}</div>
+      ${techHtml ? `<div class="project-tech">${techHtml}</div>` : ''}
+    `;
+    projectsContainer.appendChild(item);
+  });
+
+  // Education
+  const eduContainer = document.getElementById('education-container');
+  cvData.education.forEach(e => {
+    const item = document.createElement('div');
+    item.className = 'edu-item';
+    item.innerHTML = `
+      <div class="edu-header">
+        <div><span class="edu-degree">${e.degree}</span> — <span class="edu-school">${e.school}</span></div>
+        <span class="edu-period">${e.period}</span>
+      </div>
+    `;
+    eduContainer.appendChild(item);
+  });
+
+  // Achievements
+  const achieveContainer = document.getElementById('achievements-container');
+  cvData.achievements.forEach(a => {
+    const item = document.createElement('div');
+    item.className = 'achieve-item';
+    item.innerHTML = `
+      <div class="achieve-bullet"></div>
+      <span>${a}</span>
+    `;
+    achieveContainer.appendChild(item);
+  });
+}
+
+document.addEventListener('DOMContentLoaded', render);
+</script>
+</body>
+</html>
