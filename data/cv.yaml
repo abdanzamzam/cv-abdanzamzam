@@ -153,42 +153,39 @@ skills:
   backend:
     expert:
       - "Node.js"
+      - "NestJS"
       - "Express.js"
       - "Laravel"
+      - "TypeScript"
       - "PostgreSQL"
-      - "Sequelize ORM"
-      - "REST API"
       - "Microservices"
+      - "REST API"
     proficient:
+      - "TypeORM"
+      - "Redis"
+      - "Apache Kafka"
+      - "RabbitMQ"
+      - "GraphQL"
+      - "Docker"
+    familiar:
       - "MySQL"
       - "MongoDB"
-      - "GraphQL"
-      - "RabbitMQ"
-      - "Kong API Gateway"
-      - "Redis"
-    familiar:
-      - "PHP"
-      - "Java"
-      - "C/C++"
-      - "TypeORM"
       - "Socket.io"
+      - "Kong API Gateway"
 
   frontend:
     expert:
       - "React.js"
       - "TailwindCSS"
-      - "Bootstrap"
     proficient:
+      - "Next.js"
       - "Vue.js"
       - "React Native"
+      - "Bootstrap"
       - "jQuery"
-      - "HTML/CSS"
-      - "Apollo Client"
     familiar:
       - "Flutter"
-      - "Dart"
       - "WordPress"
-      - "Redux"
 
   ai:
     expert:
