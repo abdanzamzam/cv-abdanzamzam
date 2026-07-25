@@ -232,7 +232,7 @@ projects:
       Node.js microservices, PostgreSQL, RabbitMQ, and Kong API Gateway.
     role: "Backend Developer / System Integrator"
 
-  - name: "Kelola , Finance Management App"
+  - name: "Kelola, Finance Management App"
     url: "https://github.com/abdanzamzam/kelola"
     description: >
       Full-stack personal finance management application built with
@@ -264,7 +264,7 @@ projects:
 
 achievements:
   - "4K+ followers on LinkedIn with active content creation in tech community"
-  - "Speaker at Universitas Pendidikan Indonesia , Laravel Workshop (2021)"
+  - "Speaker at Universitas Pendidikan Indonesia, Laravel Workshop (2021)"
   - "Content Creator at Lampung Dev community (2022 - Present)"
 
 certifications:
