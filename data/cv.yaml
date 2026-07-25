@@ -100,8 +100,8 @@ experience:
       - "Built data pipelines using Node.js, Express, and RabbitMQ for real-time event processing"
       - "Collaborated with cross-functional teams to design database schemas and API contracts"
 
-  - company: "Bigsource Project"
-    role: "Full Stack Developer (Co-founder)"
+  - company: "Freelancer"
+    role: "Full Stack Developer"
     period: "2019 - 2021"
     location: "Bandar Lampung, Indonesia"
     tech:
@@ -116,8 +116,8 @@ experience:
       - "Managed full project lifecycle from requirements gathering to deployment and maintenance"
       - "Mentored junior developers and established coding standards and best practices"
 
-  - company: "Bigsource Project"
-    role: "Full Stack Developer (Co-founder)"
+  - company: "Freelancer"
+    role: "Full Stack Developer"
     period: "2019 - 2021"
     location: "Bandar Lampung, Indonesia"
     highlights:
