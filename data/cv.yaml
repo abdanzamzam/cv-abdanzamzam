@@ -302,6 +302,11 @@ certifications:
     url: ""
 
 volunteer:
+  - organization: "Web Programming Lampung"
+    role: "Co-Founder"
+    period: "2020 - Present"
+    description: "Co-founded and built a local developer community focused on web technologies, organizing workshops and knowledge-sharing sessions"
+
   - organization: "Lampung Dev"
     role: "Content Creator"
     period: "Feb 2022 - Present"
