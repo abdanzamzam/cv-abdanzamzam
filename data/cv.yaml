@@ -14,14 +14,16 @@ personal:
 
 summary: >
   Building scalable backend systems & full-stack applications. 6+ years
-  shipping production code in government & enterprise.
+  shipping production code in government & enterprise. Passionate about AI
+  integration and automation.
 
 about: >
   Backend and data engineer with over 6 years in the industry, passionate
   about architecting systems that handle real business impact. Experienced
   across government and enterprise, from building microservices and data
   pipelines to full-stack development. Always focused on clean architecture
-  and solutions that scale.
+  and solutions that scale. Actively exploring AI integration and automation
+  to build smarter systems.
 
 experience:
   - company: "PT Astra International Tbk"
@@ -253,6 +255,14 @@ projects:
       Includes auction system, real-time bidding, online payment
       with Midtrans, and email notifications.
     tech: "NestJS, Next.js, PostgreSQL, Midtrans, Socket.io"
+
+  - name: "Ebook AI Series"
+    url: ""
+    description: >
+      Authored a series of technical ebooks on AI topics including
+      Prompt Engineering, AI Automation for Business, and No-Code AI
+      Agent Development. Distributed through personal platform.
+    tech: "Prompt Engineering, AI Automation, AI Agents"
 
   - name: "AI Agent Platform (No-Code)"
     url: ""
