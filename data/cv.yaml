@@ -163,7 +163,27 @@ achievements:
   - "Content Creator at Lampung Dev community (2022 - Present)"
 
 certifications:
-  - name: "Full Stack JavaScript"
+  - name: "SQL (Advanced)"
+    issuer: "HackerRank"
+    year: 2024
+    url: ""
+  - name: "SQL (Basic)"
+    issuer: "HackerRank"
+    year: 2024
+    url: ""
+  - name: "Node.js (Intermediate)"
+    issuer: "HackerRank"
+    year: 2024
+    url: ""
+  - name: "JavaScript (Intermediate)"
+    issuer: "HackerRank"
+    year: 2022
+    url: ""
+  - name: "JavaScript (Basic)"
+    issuer: "HackerRank"
+    year: 2022
+    url: ""
+  - name: "Full Stack JavaScript Immersive"
     issuer: "Hacktiv8"
     year: 2021
     url: ""
