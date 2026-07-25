@@ -3,7 +3,7 @@
 
 personal:
   name: "Abdan Zam Zam Ramadhan"
-  title: "Sr. Software Engineer"
+  title: "Senior Software Engineer"
   location: "Jakarta Barat, Indonesia"
   phone: "+62 812-7825-8174"
   email: "hello@abdan.xyz"
@@ -13,7 +13,7 @@ personal:
   photo: "" # optional path to photo
 
 summary: >
-  Sr. Software Engineer with 5+ years of experience designing and building
+  Senior Software Engineer with 5+ years of experience designing and building
   scalable backend systems and full-stack applications. Specialized in Node.js,
   Laravel, and microservices architecture. Built and integrated systems for
   Indonesia's National Single Window (INSW) at the Ministry of Finance, handling
@@ -23,7 +23,7 @@ summary: >
 
 experience:
   - company: "PT Astra International Tbk"
-    role: "Sr. Software Engineer"
+    role: "Senior Software Engineer"
     period: "Dec 2024 - Present"
     location: "Jakarta, Indonesia"
     tech:
