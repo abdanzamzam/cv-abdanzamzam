@@ -193,6 +193,8 @@ skills:
     familiar:
       - "HuggingFace Transformers"
       - "CrewAI"
+      - "n8n"
+      - "OpenClaw"
       - "Weaviate / Pinecone"
 
   devops:
