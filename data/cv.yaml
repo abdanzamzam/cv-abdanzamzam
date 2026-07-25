@@ -13,13 +13,9 @@ personal:
   photo: "" # optional path to photo
 
 summary: >
-  Senior Software Engineer with 5+ years of experience designing and building
-  scalable backend systems and full-stack applications. Specialized in Node.js,
-  Laravel, and microservices architecture. Built and integrated systems for
-  Indonesia's National Single Window (INSW) at the Ministry of Finance, handling
-  high-throughput inter-agency data exchange. Proven track record in leading
-  technical initiatives, mentoring developers, and delivering production-grade
-  solutions in government and enterprise environments.
+  Building scalable backend systems, microservices, and full-stack
+  applications. 6+ years shipping production-grade code for government
+  and enterprise.
 
 experience:
   - company: "PT Astra International Tbk"
