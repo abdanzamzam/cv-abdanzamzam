@@ -475,6 +475,11 @@ const cvData = {
       proficient: ["Vue.js", "React Native", "jQuery", "Apollo Client"],
       familiar: ["Flutter", "Dart", "WordPress", "Redux"]
     },
+    ai: {
+      expert: ["Prompt Engineering", "AI Agent Development", "AI Automation", "OpenAI API", "Vector Embeddings"],
+      proficient: ["RAG", "LangChain", "LLM Fine-tuning", "Speech-to-Text / TTS"],
+      familiar: ["HuggingFace", "CrewAI", "Weaviate / Pinecone"]
+    },
     devops: ["Docker", "Linux", "CI/CD", "Cloudflare", "Git", "Nginx"]
   },
   languages: [
@@ -546,8 +551,8 @@ function render() {
 
   // Skills
   const skillsContainer = document.getElementById('skills-container');
-  const skillGroups = ['Backend', 'Frontend', 'DevOps'];
-  const skillKeys = ['backend', 'frontend', 'devops'];
+  const skillGroups = ['Backend', 'Frontend', 'AI', 'DevOps'];
+  const skillKeys = ['backend', 'frontend', 'ai', 'devops'];
   skillKeys.forEach((key, idx) => {
     const skills = cvData.skills[key];
     if (!skills) return;

@@ -178,6 +178,23 @@ skills:
       - "WordPress"
       - "Redux"
 
+  ai:
+    expert:
+      - "Prompt Engineering"
+      - "AI Agent Development"
+      - "AI Automation"
+      - "OpenAI API"
+      - "Vector Embeddings"
+    proficient:
+      - "RAG (Retrieval Augmented Generation)"
+      - "LangChain"
+      - "LLM Fine-tuning"
+      - "Speech-to-Text / TTS"
+    familiar:
+      - "HuggingFace Transformers"
+      - "CrewAI"
+      - "Weaviate / Pinecone"
+
   devops:
     - "Docker"
     - "Linux Server"
