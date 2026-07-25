@@ -312,6 +312,11 @@ volunteer:
     period: "Feb 2022 - Present"
     description: "Creating tech content and tutorials for the Lampung developer community"
 
+  - organization: "Termux Web ID"
+    role: "Founder & Educational Writer"
+    period: "2020 - Present"
+    description: "Founded and manage a platform providing educational articles on Termux, Linux, and web development for Indonesian developers"
+
   - organization: "Universitas Pendidikan Indonesia"
     role: "Workshop Speaker"
     period: "November 2021"
