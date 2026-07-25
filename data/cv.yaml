@@ -42,11 +42,11 @@ experience:
       - "Swagger"
       - "Datadog"
     highlights:
-      - "Mengembangkan Enterprise Sales Performance & Dealer Management System (OSP) untuk industri otomotif — platform berbasis Microservices yang menjadi pusat monitoring dan analitik penjualan nasional"
-      - "Merancang dashboard monitoring KPI penjualan secara near real-time: melacak pertumbuhan SPK, tren Delivery Order, pencapaian target harian, komparasi performa model kendaraan, hingga analisis pendapatan after-sales — membantu manajemen dan dealer dalam pengambilan keputusan berbasis data"
-      - "Membangun sistem analitik leads dan pipeline penjualan dengan fitur ekspor laporan CSV bervolume besar secara otomatis, langsung terkirim ke email pengguna tanpa mengganggu performa sistem"
-      - "Mengembangkan alur digital PICA (Problem Identification and Corrective Action) untuk melacak, mendokumentasikan, dan menyelesaikan masalah dealer secara terstruktur — dilengkapi sistem monitoring tenggat waktu otomatis"
-      - "Merancang sistem kontrol akses berbasis peran (RBAC) yang fleksibel, memungkinkan setiap level pengguna melihat data dan laporan yang relevan dengan perannya masing-masing"
+      - "Developed the Enterprise Sales Performance & Dealer Management System (OSP) for the automotive industry — a Microservices-based platform serving as the national command center for sales monitoring and analytics"
+      - "Designed near real-time KPI monitoring dashboards for tracking SPK growth, Delivery Order trends, daily target achievement, vehicle model performance comparison, and after-sales revenue analysis — empowering management and dealers with data-driven decision-making"
+      - "Built lead analytics and sales pipeline management with automated large-volume CSV report exports, delivered directly to users' email without impacting system performance"
+      - "Developed a digital PICA (Problem Identification and Corrective Action) workflow for structured dealer issue tracking, documentation, and resolution — integrated with automated deadline monitoring"
+      - "Designed a flexible role-based access control (RBAC) system, ensuring every user level accesses data and reports relevant to their role"
 
   - company: "PT Astra International Tbk"
     role: "Data Engineer"
