@@ -185,6 +185,10 @@ skills:
       - "Next.js"
       - "Vue.js"
       - "React Native"
+      - "Angular"
+      - "Vite"
+      - "Expo"
+      - "Redux"
       - "Bootstrap"
       - "jQuery"
     familiar:
