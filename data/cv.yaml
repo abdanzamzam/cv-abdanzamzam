@@ -181,14 +181,14 @@ skills:
     expert:
       - "React.js"
       - "TailwindCSS"
-    proficient:
       - "Next.js"
-      - "Vue.js"
-      - "React Native"
-      - "Angular"
       - "Vite"
       - "Expo"
       - "Redux"
+    proficient:
+      - "Angular"
+      - "Vue.js"
+      - "React Native"
       - "Bootstrap"
       - "jQuery"
       - "Shadcn/ui"
