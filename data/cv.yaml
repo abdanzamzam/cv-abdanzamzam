@@ -117,7 +117,7 @@ experience:
       - "Collaborated with cross-functional teams to design database schemas and API contracts"
 
   - company: "Freelancer"
-    role: "Full Stack Developer"
+    role: "Full Stack Developer (Co-founder)"
     period: "2019 - 2021"
     location: "Bandar Lampung, Indonesia"
     tech:
@@ -126,16 +126,6 @@ experience:
       - "PHP"
       - "Bootstrap"
       - "WordPress"
-    highlights:
-      - "Co-founded a software house delivering custom applications for SME clients"
-      - "Built 15+ web and mobile applications using Laravel, WordPress, and Android (Java)"
-      - "Managed full project lifecycle from requirements gathering to deployment and maintenance"
-      - "Mentored junior developers and established coding standards and best practices"
-
-  - company: "Freelancer"
-    role: "Full Stack Developer"
-    period: "2019 - 2021"
-    location: "Bandar Lampung, Indonesia"
     highlights:
       - "Co-founded a software house delivering custom applications for SME clients"
       - "Built 15+ web and mobile applications using Laravel, WordPress, and Android (Java)"
@@ -170,7 +160,6 @@ skills:
       - "Apache Kafka"
       - "RabbitMQ"
       - "GraphQL"
-      - "Docker"
     familiar:
       - "MySQL"
       - "MongoDB"
